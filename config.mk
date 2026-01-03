@@ -4,15 +4,23 @@
 #
 
 # Inherit from the proprietary version
-$(call inherit-product, vendor/oneplus/dolby/dolby-vendor.mk)
+$(call inherit-product, vendor/xiaomi/dolby/dolby-vendor.mk)
+
+# Dolby
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1 \
+    ro.vendor.dolby.model=PAFM00 \
+    ro.vendor.dolby.device=OP46C3 \
+    ro.vendor.dolby.manufacturer=OPLUS \
+    ro.vendor.dolby.brand=OPLUS
 
 # DolbyManager
 PRODUCT_PACKAGES += \
-    OplusDolby
+    DolbyAtmos
 
 # Overlay-RRO
 PRODUCT_PACKAGES += \
-    OplusDolbyResCommon
+    XiaomiDolbyResCommon
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

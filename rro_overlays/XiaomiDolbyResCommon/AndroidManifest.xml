@@ -4,10 +4,10 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="co.aospa.dolby.oplus.overlay">
+    package="co.aospa.dolby.overlay">
 
     <overlay
         android:isStatic="true"
         android:priority="300"
-        android:targetPackage="co.aospa.dolby.oplus" />
+        android:targetPackage="co.aospa.dolby" />
 </manifest>
